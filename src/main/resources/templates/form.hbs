@@ -1,0 +1,23 @@
+{{#partial "content"}}
+        <h1>Plan your packinglist!</h1>
+        <form action="/packinglist/new" method="post">
+            <label for="name">Name Your Packing List</label>
+            <input id="name" name="name" type="text"><br>
+            <input type="checkbox" name="listItem" value="axe">axe<br>
+            <input type="checkbox" name="listItem" value="firesteel">firesteel<br>
+            <input type="checkbox" name="listItem" value="rope">rope<br>
+            <input type="checkbox" name="listItem" value="messkit">messkit<br>
+            <input type="checkbox" name="listItem" value="clothes">clothes<br>
+            <input type="checkbox" name="listItem" value="tent">tent<br>
+            <input type="checkbox" name="listItem" value="sleepingbag">sleepingbag<br>
+            <input type="checkbox" name="listItem" value="hatchet">hatchet<br>
+            <input type="checkbox" name="listItem" value="flashlight">flashlight<br>
+            <input type="checkbox" name="listItem" value="food">food<br>
+            <input type="checkbox" name="listItem" value="shoes">shoes<br>
+            <input type="checkbox" name="listItem" value="socks">socks<br>
+
+            <button type="submit" class="btn btn-default">Go</button>
+    </form>
+{{/partial}}
+
+{{> layout.hbs}}

@@ -1,0 +1,28 @@
+{{#partial "content"}}
+
+    <h1>Packing Lists</h1>
+
+    {{#if allLists }}
+        {{#each allLists }} <!--loop-->
+        <div class="well">
+            <p>List</p>
+            <p>{{ name }}></p> <!--show-->
+            <p>{{ packedInBag }}</p>
+        </div>
+        {{/each}}
+    {{else}} <!--no posts!-->
+    <p>No lists have been planned ... shuffle over to Add a New Packing List</p>
+
+    {{/if}}
+
+    <!--<p>Add a new Post:</p>-->
+
+    <!--<form action="/posts/new" method="POST">-->
+        <!--<label for="content">Post Description</label>-->
+        <!--<input id="content" name="content" type="text">-->
+
+        <!--<button type="submit" class="btn btn-default">Add post</button>-->
+    <!--</form>-->
+{{/partial}}
+
+{{> layout.hbs}}

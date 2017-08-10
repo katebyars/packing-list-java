@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{#block "title"}}Packing List App{{/block}}</title>
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="/css/main.css">
+
+</head>
+<body>
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="/packinglist">See All Packing Lists</a></li>
+    <li role="presentation"><a href="/packinglist/new">Add a New Packing List</a></li>
+</ul>
+<div class="container">
+    <!--begin main template-->
+    <div class="page-header">
+        <img src=>
+        <h1>Let's Pack A Bag</h1>
+    </div>
+
+    <div class="col-md-12">
+        {{#block "content"}}
+        {{/block}}
+
+    </div>
+</div>
+<!--end main template-->
+<!--{{#block "footer"}}-->
+    <!--<footer class="footer">-->
+        <!--<div class="container">-->
+            <!--<p class="text-muted"><a href="/posts/delete">DELETE ALL POSTS</a></p>-->
+        <!--</div>-->
+    <!--</footer>-->
+    </body>
+    </html>
+<!--{{/block}}-->
